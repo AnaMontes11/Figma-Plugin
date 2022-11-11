@@ -25,7 +25,7 @@ function Plugin() {
   return (
     <Container style="padding: 0">
       <Banner icon={<IconMegaphone32 />}>
-      Welcome to the Design Toolkit plugin
+      Welcome to Mistica Project Starter Plugin
     </Banner>
       <Container>
         <VerticalSpace space="large" />
@@ -41,40 +41,40 @@ function Plugin() {
         <VerticalSpace space="large" />
         <Stack space="extraLarge">
           <Stack space="medium">
-            <Text bold>Documentation</Text>
+            <Text bold>All you need to start designing is here</Text>
             <Inline space="medium">
               <Text>
-                <a href="https://github.com/NoWorries/toolkit-figma-plugin" target="_blank">
-                  🌐 Storybook
+                <a href="https://www.figma.com/file/t4zLZLdqFLHOCf1DIaxS8e/M%C3%ADstica%2C-Figma-%26-You?t=SJI1vwkbBHFFJo3j-6" target="_blank">
+                  🌐 Mística, Figma & You
                 </a>
               </Text>
               <Text>
                 <a
-                  href="https://github.com/NoWorries/toolkit-figma-plugin"
+                  href="https://brandfactory.telefonica.com/mistica"
                   target="_blank"
                 >
-                  🌐 Documentation
+                  🌐 Mistica DS Documentation
                 </a>
               </Text>
             </Inline>
           </Stack>
           <Stack space="medium">
-            <Text bold>Design Support</Text>
+            <Text bold>Find us here</Text>
             <Inline space="medium">
               <Text>
                 <a
-                  href="https://github.com/NoWorries/toolkit-figma-plugin"
+                  href="https://teams.microsoft.com/l/channel/19%3ad2e3607a32ec411b8bf492f43cd0fe0c%40thread.tacv2/General?groupId=e265fe99-929f-45d1-8154-699649674a40&tenantId=9744600e-3e04-492e-baa1-25ec245c6f10"
                   target="_blank"
                 >
-                  🌐 Social channel
+                  🌐 Teams channel
                 </a>
               </Text>
               <Text>
                 <a
-                  href="https://github.com/NoWorries/toolkit-figma-plugin"
+                  href="https://mistica.substack.com/"
                   target="_blank"
                 >
-                  🌐 Jira
+                  🌐 Our Newsletter
                 </a>
               </Text>
             </Inline>

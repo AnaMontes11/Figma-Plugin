@@ -18,12 +18,12 @@
     "editorType": [
       "figma"
     ],
-    "name": "Design Toolkit",
+    "name": "Mistica Project Starter",
     "main": "src/main.ts",
     "ui": "src/ui.tsx",
     "relaunchButtons": {
-      "designToolkit": {
-        "name": "Design Toolkit",
+      "MisticaProjectStarter": {
+        "name": "Mistica Project Starter",
         "main": "src/main.ts",
         "ui": "src/ui.tsx"
       }

@@ -14,65 +14,19 @@ export default async function () {
   once<CreatePageHandler>("CREATE_PAGES", function () {
     // This is the list of pages to create in your document.
     const pages = [
-      { name: "Cover", node: "PAGE", title: "Cover" },
+      { name: "🖼️ Cover", node: "PAGE", title: "Cover" },
       {
-        name: "🤔 About",
+        name: "🧐 About",
         node: "PAGE",
         title: "About",
         description: "Project overview",
       },
+      { name: "________________", node: "PAGE" },
       {
-        name: "💻 Prototype",
+        name: "💡 Explorations",
         node: "PAGE",
-        title: "Prototype",
-        description: "Interactive prototype",
-      },
-      {
-        name: "✅ Ready for dev",
-        node: "PAGE",
-        title: "Ready for dev",
-        description: "Approved designs, ready for development",
-      },
-      { name: "--------", node: "PAGE" },
-      {
-        name: "✏️ Copy review",
-        node: "PAGE",
-        title: "Copy review",
-        description: "Content for review and sign off",
-      },
-      {
-        name: "[Date] Design review",
-        node: "PAGE",
-        title: "Design review",
-        description: "[Date]",
-      },
-      {
-        name: "[Date] Feature/component",
-        node: "PAGE",
-        title: "Feature/component",
-        description: "[Date]",
-      },
-      { name: "--------", node: "PAGE" },
-      {
-        name: "💡 Work in progress",
-        node: "PAGE",
-        title: "Work in progress",
-        description:
-          "Explorations and work in progress, not ready for development",
-      },
-      { name: "--------", node: "PAGE" },
-      {
-        name: "🎨 Design research",
-        node: "PAGE",
-        title: "Design research",
-        description:
-          "Collected research artefacts and data from existing resources",
-      },
-      {
-        name: "👩🏽‍💻 User research",
-        node: "PAGE",
-        title: "User research",
-        description: "Generative field research",
+        title: "Explorations",
+        description: "Explorations and work in progress",
       },
       {
         name: "Workshop",
@@ -80,11 +34,93 @@ export default async function () {
         title: "Workshop",
         description: "Artefacts for workshop activity",
       },
+
       {
-        name: "Flows",
+        name: "👩🏽‍💻 User research",
+        node: "PAGE",
+        title: "User research",
+        description: "Field research",
+      },
+  
+      {
+        name: "🧪 User test",
+        node: "PAGE",
+        title: "User test",
+        description: "Interactive prototype",
+
+      },
+      { name: "________________", node: "PAGE" },
+
+      {
+        name: "🎢 Flows",
         node: "PAGE",
         title: "Flows",
+        description: "Approved designs, ready for development",
+      },
+
+      {
+        name: "[Date] Name Flow 1.0",
+        node: "PAGE",
+        title: "Name Flow 1.0",
         description: "Journey flows and logic",
+      },
+      {
+        name: "[Date] Name Flow 1.1",
+        node: "PAGE",
+        title: "Name Flow 1.1",
+        description: "Journey flows and logic",
+      },
+      {
+        name: "[Date] Name Flow 1.2",
+        node: "PAGE",
+        title: "Name Flow 1.2",
+        description: "Journey flows and logic",
+      },
+      { name: "________________", node: "PAGE" },
+      {
+        name: "🎨 Design",
+        node: "PAGE",
+        title: "Design",
+        description:
+          "Use case designs",
+      },
+      {
+        name: "Name Design 1",
+        node: "PAGE",
+        title: "Name Design 1",
+        description: "Use case designs",
+      },
+      {
+        name: "Name Design 2",
+        node: "PAGE",
+        title: "Name Design 2",
+        description: "Use case designs",
+      },
+      { name: "________________", node: "PAGE" },
+      {
+        name: "🖋️ Copy review",
+        node: "PAGE",
+        title: "Copy review",
+        description: "Content for review and sign off",
+      },
+      {
+        name: "👾 Ready for Dev",
+        node: "PAGE",
+        title: "Ready for Dev",
+        description: "Finals designs for developers",
+      },
+      { name: "________________", node: "PAGE" },
+      {
+        name: "🗄️ Archived",
+        node: "PAGE",
+        title: "Archived",
+        description: "Designs archived to retrieve",
+      },
+      {
+        name: "🪦 Deprecated",
+        node: "PAGE",
+        title: "Deprecated",
+        description: "Designs death — literally",
       },
     ];
 
@@ -135,7 +171,7 @@ export default async function () {
     let coverComponent: ComponentNode | null = null;
 
     async function getCoverComponent() {
-      const coverComponentKey = "INSERT_COVER_KEY_HERE"; // Replace this with the Key for your cover component.
+      const coverComponentKey = "49f982a66f6dd65f7ebce2c6400980e5235c1722"; // Replace this with the Key for your cover component.
       const instance = await figma.importComponentByKeyAsync(coverComponentKey);
       coverComponent = instance;
     }
@@ -144,7 +180,7 @@ export default async function () {
     let pageTitleComponent: ComponentNode | null = null;
 
     async function getPageTitleComponent() {
-      const pageTitleComponentKey = "INSERT_TITLE_KEY_HERE"; // Replace this with the Key for your title component.
+      const pageTitleComponentKey = "8c50e6a73ddd2e5e5d996717b2687648e84e225a"; // Replace this with the Key for your title component.
       const instance = await figma.importComponentByKeyAsync(pageTitleComponentKey);
       pageTitleComponent = instance;
     }
@@ -153,7 +189,7 @@ export default async function () {
     let exampleComponent: ComponentNode | null = null;
 
     async function getExampleComponent() {
-      const exampleComponentKey = "INSERT_EXAMPLE_KEY_HERE"; // This is an example component, use this block as a reference when for importing additional components
+      const exampleComponentKey = "74d4f74afc3a993f1a2b74ae20d8e6535db66b33"; // This is an example component, use this block as a reference when for importing additional components
       const instance = await figma.importComponentByKeyAsync(exampleComponentKey);
       exampleComponent = instance;
     }
